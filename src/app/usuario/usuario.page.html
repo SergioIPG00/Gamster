@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <ion-button slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-button>
+    <ion-title>     
+        Perfil
+        <ion-icon name="settings-outline" id="config"></ion-icon> 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="perfil">
+    <ion-avatar>
+      <ion-img class="avatar" src="https://cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/WCB4TXLTWBHWHCCYFEH2RNWWQI.jpg"></ion-img>
+    </ion-avatar>
+    <p></p>
+    <p>Sergio Pedraza</p> 
+  </ion-grid>
+  <ion-tabs>
+    
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="favoritos">
+        <ion-icon name="heart-outline"></ion-icon>
+        <ion-label>favoritos</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="cometarios">
+        <ion-icon name="chatbox-outline"></ion-icon>
+        <ion-label>cometarios</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="pendientes">
+        <ion-icon name="bookmark-outline"></ion-icon>
+        <ion-label>pendientes</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="finalizados">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <ion-label>finalizados</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
