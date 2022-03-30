@@ -6,7 +6,14 @@ import { UsuarioPage } from './usuario.page';
 const routes: Routes = [
   {
     path: '',
-    component: UsuarioPage
+    component: UsuarioPage,
+    children: 
+    [
+      {
+        path: 'favoritos',
+        loadChildren: () => import('../favoritos/favoritos.component').then(m => m.FavoritosComponent) 
+      }
+    ]
   }
 ];
 
