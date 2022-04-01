@@ -1,17 +1,27 @@
 <ion-app>  
-  <ion-menu side="start" menuId="first" contentId="main" id="menu">
-    <ion-header>
-      <ion-toolbar>
+  <ion-menu side="start" menuId="first" contentId="main" id="menu" type="push">
+    <ion-header class="menu-header-bg">
+      <ion-toolbar class="header-content">
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-list>
-        <ion-item routerLink="/home" (click)="toggleMenu()">incio</ion-item>
-        <ion-item routerLink="/usuario" (click)="toggleMenu()">Perfil</ion-item>
-        <ion-item>listas</ion-item>
-        <ion-item>Juegos</ion-item>
-        <ion-item>novedades</ion-item>
+      <ion-list class="menu-items" lines="none">
+        <ion-item routerLink="/home" (click)="toggleMenu()">
+          <ion-icon name="home-outline"></ion-icon>inicio
+        </ion-item>
+        <ion-item routerLink="/usuario" (click)="toggleMenu()">
+          <ion-icon name="accessibility-outline"></ion-icon>Perfil
+        </ion-item>
+        <ion-item>
+          <ion-icon name="list-outline"></ion-icon>listas
+        </ion-item>
+        <ion-item>
+          <ion-icon name="game-controller-outline"></ion-icon>Juegos
+        </ion-item>
+        <ion-item>
+          <ion-icon name="sparkles-outline"></ion-icon>novedades
+        </ion-item>
       </ion-list>
     </ion-content>
   </ion-menu>
