@@ -37,5 +37,5 @@
 
     <!-- Permissions -->
 
-    <uses-permission android:name="android.permission.INTERNET" />g
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
