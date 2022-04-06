@@ -13,14 +13,14 @@
         <ion-item routerLink="/usuario" (click)="toggleMenu()">
           <ion-icon name="accessibility-outline"></ion-icon>Perfil
         </ion-item>
-        <ion-item>
-          <ion-icon name="list-outline"></ion-icon>listas
+        <ion-item routerLink="juego" (click)="toggleMenu()">
+          <ion-icon name="list-outline"></ion-icon>lista de juegos
         </ion-item>
-        <ion-item>
+        <!-- <ion-item>
           <ion-icon name="game-controller-outline"></ion-icon>Juegos
-        </ion-item>
-        <ion-item>
-          <ion-icon name="sparkles-outline"></ion-icon>novedades
+        </ion-item> -->
+        <ion-item routerLink="/boton-de-pagos" (click)="toggleMenu()">
+          <ion-icon name="sparkles-outline"></ion-icon>Donaciones
         </ion-item>
       </ion-list>
     </ion-content>

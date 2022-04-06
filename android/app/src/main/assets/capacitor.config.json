@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Gamster",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
