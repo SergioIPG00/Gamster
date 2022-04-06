@@ -1,0 +1,38 @@
+.toolbar{
+    height: 84px;
+    --background: #0F159A;
+    color: #fff;
+    font-size: 20px;
+    line-height: 84px;
+}
+
+.container{
+    width: 100%;
+    ion-thumbnail{
+        width: 100px !important;
+        height: 100px !important;
+        img{
+            border-radius: 10px ;
+        } 
+
+    }
+
+    .rate{
+        color: #ccc;
+    }
+
+    #qty{
+        margin-top: 5px;
+        .minus{
+            font-weight: 600;
+            padding: 5px;
+            margin-right: 20px;
+        }
+
+        .plus{
+            margin-left: 20px;
+            font-weight: 600;
+            padding: 5px;
+        }
+    }
+}
