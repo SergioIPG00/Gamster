@@ -34,10 +34,11 @@ const routes: Routes = [
   {
     path: 'juego',
     loadChildren: () => import('./juego/juego.module').then( m => m.JuegoPageModule)
-  },  {
+  },
+  {
     path: 'perfil-juego',
     loadChildren: () => import('./perfil-juego/perfil-juego.module').then( m => m.PerfilJuegoPageModule)
-  },
+  }
 
 
   

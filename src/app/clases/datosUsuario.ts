@@ -1,15 +1,15 @@
-export class usario{
+export class usuario{
     id?: string;
     Email: string;
     Nombre: string;
     Apellidos: string;
-    FechaNacimiento: Date;
+    FechaNacimiento: string;
 
-    constructor(nombre: string, apellidos: string, fecha: Date, email: string){
-        this.Nombre = nombre;
-        this.Apellidos = apellidos;
-        this.FechaNacimiento = fecha;
-        this.Email = email;
-    }
-
+    // constructor(id: string, nombre: string, Apellidos: string, Email: string, FechaNacimiento: string){
+    //     this.id = id;
+    //     this.Nombre = nombre;
+    //     this.Apellidos = Apellidos;
+    //     this.Email = Email;
+    //     this.FechaNacimiento = FechaNacimiento;
+    // }
 }

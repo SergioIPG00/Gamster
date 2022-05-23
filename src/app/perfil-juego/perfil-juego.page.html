@@ -1,9 +1,41 @@
 <ion-header>
   <ion-toolbar>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <ion-button slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-button>
     <ion-title>Perfil-juego</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-grid class="perfil" style="text-align:center;">    
+    <ion-img style="text-align:center;" class="avatar" src="{{juego.imagen}}"></ion-img>
+    <p></p>
+    <h2 style="text-align:center;">{{juego.Nombre}}</h2>
+    <h5 style="text-align:center;">{{juego.Compania}}</h5>
+  </ion-grid>
+  <ion-button id="side-button">Agregar comentario</ion-button>
+<ion-popover trigger="side-button" side="top">
+  <ng-template>
+    <ion-content>      
+        <ion-label position="stacked">
+          Comentario
+        </ion-label>
+        <p></p>
+        <textarea name="comentarios" rows="5" cols="25" [(ngModel)]="contenido"></textarea>
+      <ion-button (click)="guardar()" id="side-button">Guardar</ion-button>
+    </ion-content>
+  </ng-template>
+</ion-popover>
+  <ion-card *ngFor="let comentario of comentario">
+    <ion-card-header>
+      <ion-card-subtitle>{{comentario.Usuario}}</ion-card-subtitle>
+      <ion-card-title>{{comentario.Juego}}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{comentario.Comentario}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
