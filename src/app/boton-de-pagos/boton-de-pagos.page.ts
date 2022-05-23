@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-boton-de-pagos',
@@ -11,7 +12,9 @@ export class BotonDePagosPage implements OnInit {
     console.log('pagar')
   }
 
-  constructor() { }
+  constructor(
+    private menu: MenuController
+    ) { this.menu.enable(true, 'custom');}
 
   ngOnInit() {
   }

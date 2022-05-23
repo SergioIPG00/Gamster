@@ -9,10 +9,7 @@ const routes: Routes = [
     component: UsuarioPage,
     children: 
     [
-      {
-        path: 'favoritos',
-        loadChildren: () => import('../favoritos/favoritos.component').then(m => m.FavoritosComponent) 
-      }
+      
     ]
   }
 ];
