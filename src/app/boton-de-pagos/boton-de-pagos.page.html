@@ -5,10 +5,16 @@
       <ion-menu-button autoHide="false"></ion-menu-button>
     </ion-button>
     <ion-title>
-      Boton de pagos</ion-title>
+      Donaciones</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-button (click)="pagar()" href="https://www.paypal.com/donate/?hosted_button_id=BWYE3LTUQNRKE">Compranos un café</ion-button>
+  <ion-slide>
+    <div class="contaier-login"> 
+      <img src="assets/img/icono.jpeg">
+      <p>Apóyanos donando en nuestro PayPal para inspirarnos a mejorar nuestra aplicación</p>
+      <ion-button (click)="pagar()" href="https://www.paypal.com/donate/?hosted_button_id=BWYE3LTUQNRKE">Donación</ion-button>
+    </div>
+  </ion-slide>    
 </ion-content>

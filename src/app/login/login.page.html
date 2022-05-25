@@ -1,24 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>Iniciar Sesion</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-    <ion-label>
-      Email
-    </ion-label>
-    <ion-input Type="text" [(ngModel)]="user.email"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>
-      Contraseña
-    </ion-label>
-    <ion-input Type="password" [(ngModel)]="user.password"></ion-input>
-  </ion-item>
-  <ion-item-divider>
-    <ion-button (click)="onLogin()">Login</ion-button>
-    <ion-button href="/registro">Registrarte</ion-button>
-  </ion-item-divider>
+  <ion-slide>
+    <div class="contaier-login"> 
+      <ion-grid>
+        <h1>Ingresar</h1>
+        <ion-item>
+          <ion-icon name="person" class="icon-login"></ion-icon>
+          <ion-input Type="text" [(ngModel)]="user.email" required placeholder="Email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="key" class="icon-login"></ion-icon>
+          <ion-input Type="password" [(ngModel)]="user.password" required placeholder="Contraseña"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-button (click)="onLogin()">Inicia Sesión</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-button href="/registro">Registrarte</ion-button>
+        </ion-item>
+      </ion-grid>
+    </div>
+  </ion-slide>
 </ion-content>

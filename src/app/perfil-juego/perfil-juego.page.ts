@@ -74,7 +74,6 @@ export class PerfilJuegoPage implements OnInit {
   }
 
   async guardar(){
-    debugger;
     try {
       const docRef = await addDoc(collection(this.db, "Comentarios"), {
         Usuario: this.Nombre + " " + this.Apellidos,
@@ -85,6 +84,6 @@ export class PerfilJuegoPage implements OnInit {
     } catch (e) {
       console.error("Error adding document: ", e);
     }
-    }
+  }
   
 }

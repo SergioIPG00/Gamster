@@ -1,41 +1,40 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons  slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
     <ion-title>Registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-    <ion-label>
-      Email
-    </ion-label>
-    <ion-input Type="text" [(ngModel)]="usuario.Email"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>
-      Contraseña
-    </ion-label>
-    <ion-input Type="password" [(ngModel)]="user.password"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>
-      Nombre
-    </ion-label>
-    <ion-input Type="text" [(ngModel)]="usuario.Nombre"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label>
-      Apellido
-    </ion-label>
-    <ion-input Type="text" [(ngModel)]="usuario.Apellidos"></ion-input>
-  </ion-item><ion-item>
-    <ion-label>
-      Fecha de nacimiento
-    </ion-label>
-    <ion-input Type="text" [(ngModel)]="usuario.FechaNacimiento"></ion-input>
-  </ion-item>
-  <ion-item-divider>
-    <ion-button (click)="onRegister()">Registrar</ion-button>
-    <ion-button href="/login">login</ion-button>
-  </ion-item-divider>
+  <ion-slide>
+    <div class="contaier-login"> 
+      <h1>Registrate</h1>
+      <ion-item>
+        <ion-icon name="mail"></ion-icon>
+        <ion-input Type="text" [(ngModel)]="usuario.Email" required placeholder="Email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="key"></ion-icon>
+        <ion-input Type="password" [(ngModel)]="user.password" required placeholder="Contraseña"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="accessibility"></ion-icon>
+        <ion-input Type="text" [(ngModel)]="usuario.Nombre" required placeholder="Nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="accessibility"></ion-icon>
+        <ion-input Type="text" [(ngModel)]="usuario.Apellidos" required placeholder="Apellido"></ion-input>
+      </ion-item><ion-item>
+        <ion-icon name="today"></ion-icon>
+        <ion-input Type="text" [(ngModel)]="usuario.FechaNacimiento" required placeholder="Fecha de nacimiento"></ion-input>
+      </ion-item>
+      <div class="botones">
+        <ion-item>
+          <ion-button (click)="onRegister()">Crear</ion-button>
+        </ion-item>
+      </div>
+    </div>
+  </ion-slide>
 </ion-content>
